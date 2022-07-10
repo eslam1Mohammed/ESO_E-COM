@@ -4,6 +4,13 @@
     box-sizing: border-box;
     /* border: solid green; */
 }
+.contaner-of-div6 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
 body {
     font-family: 'HelveticaNeueLTStd_Roman',sans-serif;
     font-size: 14px;
@@ -19,6 +26,29 @@ body {
     width: 100%;
     
 }
+.scrolltop{
+    bottom: 65px;
+    position: fixed;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1003;
+    border: none;
+    background:linear-gradient(90deg,#c467f5,#53f3ff);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.active
+{
+    visibility:visible;
+    opacity:1;
+}
+
 .header
 {
     width: 100%;
@@ -413,13 +443,20 @@ body {
     width: 300px;
     border-bottom: solid 1px rgb(216, 205, 205);
 }
+.ul2 li:hover
+{
+    color: red;
+}
 .ul2-link
 {
     font-size: 15px;
     color: black;
     text-decoration: none;
 }
-
+.ul2-link:hover
+{
+    color: red;
+}
 .arow-span
 {
     margin-left: auto;
@@ -1082,6 +1119,7 @@ body {
     margin: auto;
     width: 97%;
     width: 100%;
+    
 }
 .section-9
 {
@@ -1216,9 +1254,12 @@ body {
 }
 .hidden-icons-section8
 {
-    display: none;
     margin-top: 20px;
     border-top: rgb(231, 212, 212) solid;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
 }
 .in-hidden-icons-section8
 {
@@ -1237,7 +1278,8 @@ body {
 }
 .d1:hover .hidden-icons-section8
 {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .section10
 {
@@ -1312,12 +1354,15 @@ body {
 }
 .d2:hover .hidden-icons-section9
 {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .hidden-icons-section9
 {
 
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
     margin-top: 20px;
     border-top: rgb(231, 212, 212) solid;
 }
@@ -1343,7 +1388,8 @@ body {
 }
 .d3:hover .hidden-icons-section8
 {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .imgs-of-section91
 {
@@ -1832,7 +1878,7 @@ font-size: 15px;
 }
 .contaner-of-div6-img2 .headphon2
 {
-    width: 100%;
+    width: 95%;
     transform: scale(1.1);
     opacity: 1;
     transition: 2s;
@@ -2003,11 +2049,14 @@ font-size: 15px;
 .hidden-icons-div6
 {
     border-top: rgb(245, 231, 231) solid 1px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 .divs6:hover .hidden-icons-div6
 {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .section17
 {
